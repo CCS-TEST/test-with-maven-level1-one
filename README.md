@@ -1,6 +1,6 @@
 # Test - with a maven project.
 
-###Instructions for the test.
+### Instructions for the test.
 
 ##### run the following commands
 
