@@ -1,6 +1,10 @@
 package ccs.test.mvn.level1.one;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Factor {
     /**
@@ -28,6 +32,18 @@ public class Factor {
      */
     public static List<Integer> getAllFactors(int multiple) throws BadArgumentException{
 
-        return null;
+        List<Integer> factors = new ArrayList<>();
+
+        if (multiple<=0){
+            throw new BadArgumentException("give decent no. bruh");
+        }
+
+        for (int i =1; i<= multiple; i++){
+            if (multiple%i == 0){
+                factors.add(i);
+            }
+        }
+
+        return factors;
     }
 }

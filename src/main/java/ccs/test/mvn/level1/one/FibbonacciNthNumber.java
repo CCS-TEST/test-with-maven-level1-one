@@ -14,10 +14,34 @@ public class FibbonacciNthNumber {
      * @return the nth fibonacci number
      * @throws BadArgumentException if the input is < or = 0
      */
+
+
+
+
     public static int findFibbonacci(int nthNumber) throws BadArgumentException {
 
-        //TODO - Implement method.
+        int a = 1;
+        int b=1;
+        int s = 1;
 
-        return 0;
+
+        //TODO - Implement method.
+        if (nthNumber<=0){
+            throw new BadArgumentException("please give a decent number");
+        }
+
+        if (nthNumber == 1 || nthNumber ==2){
+            return 1;
+        }
+
+        return (findFibbonacci(nthNumber-1)+findFibbonacci(nthNumber-2));
+
+//        for (int i=3; i<=nthNumber; i++){
+//            s= a+b;
+//            b=a;
+//            a=s;
+////        }
+//
+//        return s;
     }
 }
