@@ -9,6 +9,8 @@
 
 2. cd test-with-maven-level1-one
 
+2.1 : git checkout -b your_name
+
 3. Open pom.xml of this folder in intelliJ 
 <a href="https://drive.google.com/uc?export=view&id=1HRTWktnpXEbyT4EdlEBLM9ys-joVbzmb"><img src="https://drive.google.com/uc?export=view&id=1HRTWktnpXEbyT4EdlEBLM9ys-joVbzmb" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
 
