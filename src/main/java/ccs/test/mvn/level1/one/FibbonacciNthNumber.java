@@ -2,6 +2,8 @@ package ccs.test.mvn.level1.one;
 
 public class FibbonacciNthNumber {
 
+
+
     /**
      * The series goes like: 1 1 2 3 5 8 13 21 ......
      *
@@ -14,10 +16,27 @@ public class FibbonacciNthNumber {
      * @return the nth fibonacci number
      * @throws BadArgumentException if the input is < or = 0
      */
+
+
     public static int findFibbonacci(int nthNumber) throws BadArgumentException {
 
         //TODO - Implement method.
+       if(nthNumber<=0){
 
-        return 0;
+           throw new BadArgumentException("Error, please enter a valid number");
+       }
+       else{
+           if (n == 1)
+               return 0;
+           if (n == 2)
+               return 1;
+
+           return fib(n - 1) + fib(n - 2);
+
+       }
+
     }
+
+
+
 }

@@ -1,5 +1,9 @@
 package ccs.test.mvn.level1.one;
 
+import com.sun.org.apache.xalan.internal.xsltc.util.IntegerArray;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Factor {
@@ -27,7 +31,18 @@ public class Factor {
      * @throws BadArgumentException if the input is < or = 0;
      */
     public static List<Integer> getAllFactors(int multiple) throws BadArgumentException{
+            int divider = 1;
+        List cow = new ArrayList(multiple);
+            while(divider <= multiple){
+                if(multiple%divider==0){
+                    cow.add(divider);
+                }
+                divider++;
+            }
 
-        return null;
+            return cow;
+
     }
+
+
 }
